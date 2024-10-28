@@ -1,0 +1,62 @@
+
+.sidebar {
+    width: 230px; /* Set the width for the sidebar */
+    background-color: #ffffff; /* Sidebar background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding inside the sidebar */
+    position: fixed; /* Fix the sidebar on the left */
+    top: 0; /* Align to the top */
+    bottom: 0; /* Stretch to the bottom */
+
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the sidebar */
+}
+
+.sidebar-logo {
+    width: 200px; /* Adjust the width as needed */
+    height: 100px;
+    margin-bottom: 20px; /* Adds some space below the logo */
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+  } 
+.sidebar h2 {
+    font-size: 20px; /* Font size for the header */
+    margin-bottom: 20px; /* Space below the header */
+    margin-left: 20px; /* Space from the left */
+    text-align: center; /* Center the header text */
+}
+
+.sidebar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin-top: 100px; /* Space above the list */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    
+}
+
+.sidebar ul li {
+    margin-bottom: 10px; /* Space between list items */
+    width: 100%; /* Make li take full width for centering */
+    text-align: center; /* Center the text within li */
+    border: 1px solid #0019fb;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: rgb(0, 0, 0); /* Change link color to white for better visibility */
+    font-size: 16px; /* Font size for links */
+    display: block; /* Make the entire area clickable */
+    padding: 10px; /* Padding around the links for better click area */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.sidebar ul li a:hover {
+    background-color: #0056b3 ; /* Light hover effect */
+    color: #000000; /* Change hover text color */
+    border-radius: 14px;
+}

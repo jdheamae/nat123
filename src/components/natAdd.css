@@ -1,0 +1,60 @@
+.add-data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-and-uploader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  gap: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.data-form1 {
+  flex: 1;
+  margin-right: 30px;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid #cfc8c8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.uploader-container {
+  flex-basis: 30%;
+  margin-top: 10px;
+}
+
+.data-form1 input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #7c7676;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.data-form1 button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.data-form1 button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}

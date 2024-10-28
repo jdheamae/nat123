@@ -1,0 +1,38 @@
+.app-container {
+  display: flex; /* Set the layout to flex */
+  height: 100vh; /* Make the container full height */
+}
+
+
+
+.content-container {
+  margin-left: 250px; /* Offset to account for the sidebar */
+  width: calc(100% - 250px); /* Full width minus the sidebar width */
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #0056b3;
+  color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-left: 20px;
+  text-align: center;
+  justify-content: center;
+}
+h1 
+
+.main-content {
+  flex: 1; /* Allow the main content to take up remaining space */
+  padding: 20px;
+  width: 100%; /* Ensure it takes full width */
+  max-width: 500px; /* Same max-width as container for consistency */
+  overflow-y: auto; /* Allow scrolling if content is tall */
+  display: flex; /* Allow flexbox properties */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  margin-top: 50px
+}
