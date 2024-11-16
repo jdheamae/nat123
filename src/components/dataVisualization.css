@@ -1,12 +1,15 @@
 
 .data-visualization-page {
-    padding: 10px;
-    margin-left: 100px;
+   width: 100%;
+
    
   }
   
   .data-visualization-page p {
-    margin-right: 100px;
+    margin-left: 80px;
+    align-items: center; 
+    justify-content: center;
+
   }
 
   

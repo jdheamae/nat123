@@ -1,16 +1,16 @@
-  .data-list {
+.data-list {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align the content horizontally */
-    max-width: 1200px; /* Set a maximum width for the data list */
-    margin: 50px auto; /* Center the data list horizontally */
+    flex-direction: column;
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 50px auto; 
     justify-content: center;
   }
 
   .filters {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-start; 
     margin-bottom: 20px;
     margin-left: -74%;
   }
@@ -46,10 +46,10 @@
     border-color: #ccc;
   }
 
-  h2 {
-    text-align: left; /* Align title to the left */
+  .data-list h2 {
+    text-align: left; 
     margin-bottom: 20px;
-    margin-left: -58.5%;
+    margin-left: -75%;
   }
 
     
@@ -66,9 +66,9 @@
       padding: 12px;
       text-align: left;
       border-bottom: 1px solid #ddd;
-      justify-content: flex-start; /* Align items to the left */
-      align-items: center; /* Center vertically if needed */
-      gap: 10px; /* Space between buttons */
+      justify-content: flex-start; 
+      align-items: center;
+      gap: 10px; 
     }
     .data-table td button {
 
@@ -77,7 +77,7 @@
     }
     
     .data-table th {
-      background-color: #0056b3;
+      background-color: #f2645a;
       color: white;
     
     }
@@ -131,7 +131,7 @@
       padding: 8px 16px;
       border: none;
       border-radius: 4px;
-      background-color: #007bff;
+      background-color: #f2645a;
       color: white;
       cursor: pointer;
       transition: background-color 0.3s;
@@ -152,32 +152,32 @@
     
     .chart-container {
       margin-top: 40px;
-      text-align: center; /* Center align the chart container */
+      text-align: center; 
     }
     
     .chart-container canvas {
-      max-width: 100%; /* Ensure the chart scales with the container */
+      max-width: 100%; 
     }
     
 
     .data-form {
       display: flex;
-      flex-direction: column; /* Ensure elements stack vertically */
+      flex-direction: column; 
   }
 
   .data-form label {
-      margin-top: 20px; /* Add space between labels */
-      font-weight: bold; /* Make label text bold */
+      margin-top: 20px;
+      font-weight: bold; 
   }
 
   .data-form input {
-    margin-top: 5px; /* Space between label and input */
+    margin-top: 5px;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
   }
   .data-form select {
-      margin-top: 5px; /* Space between label and input */
+      margin-top: 5px; 
       padding: 8px;
       border: 1px solid #ddd;
       border-radius: 4px;
@@ -187,14 +187,14 @@
     .data-list {
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center align the content horizontally */
+      align-items: center; 
       max-width: 2500px;
       margin: 0 auto;
       padding: 20px;
     }
     
     .data-table {
-      width: 95%; /* You can adjust this percentage as needed */
+      width: 95%; 
       border-collapse: collapse;
       margin-left: 100px;
       
@@ -232,21 +232,22 @@
     
     .actions {
       display: flex;
-      gap: 50px; /* Space between buttons */
-      justify-content: center; /* Center-align the buttons horizontally */
-      align-items: center; /* Align the buttons vertically */
-      flex-wrap: nowrap; /* Prevent buttons from wrapping to the next line */
+      gap: 50px; 
+      justify-content: center; 
+      align-items: center;
+      flex-wrap: nowrap;
     }
     
     .actions button {
-      padding: 10px;
       font-size: 14px;
       border: none;
-      border-radius: 8px;
+      border-radius: 5px;
       cursor: pointer;
       max-width: 500px; 
       flex:1;
       margin-top:20px;
+      text-align: center;
+      justify-content: center;
     }
     
     .actions button:first-of-type {
@@ -275,66 +276,67 @@
     }
     .modal-content {
       background-color: white;
-      padding: 40px 80px; /* Adjusted padding for better spacing */
+      padding: 40px 80px; 
       border-radius: 8px;
       width: 600px;
-      height: auto; /* Adjust height to auto for dynamic content */
-      max-height: 600px; /* Set a max height */
-      overflow-y: auto; /* Enable vertical scrolling */
+      height: auto; 
+      max-height: 600px; 
+      overflow-y: auto; 
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      position: relative; /* Position relative for absolute elements if needed */
+      position: relative; 
   }
 
   .modal-content h3 {
 
-      margin-bottom:10px; /* Space below the title */
+      margin-bottom:10px; 
   }
 
   .modal-content input {
-      width: 100%; /* Full width for inputs */
-      padding: 10px; /* Padding for inputs */
-      margin-bottom: 10px; /* Space between inputs */
-      border: 1px solid #ccc; /* Light border */
-      border-radius: 4px; /* Rounded corners */
-      font-size: 16px; /* Font size for inputs */
+      width: 100%;
+      padding: 10px; 
+      margin-bottom: 10px; 
+      border: 1px solid #ccc;
+      border-radius: 4px; 
+      font-size: 16px;
       margin-top: 10px;
   }
   .modal-content select {
-    width: 103%; /* Full width for inputs */
-    padding: 10px; /* Padding for inputs */
-    margin-bottom: 10px; /* Space between inputs */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 16px; /* Font size for inputs */
+    width: 103%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
     margin-top: 10px;
 }
 
 
 
   .modal-content button[type="submit"] {
-      background-color: #4CAF50; /* Green background for update */
-      color: white; /* White text */
+      background-color: #4CAF50; 
+      color: white; 
       width: 50%;
   }
 
   .modal-content button[type="submit"]:hover {
-      background-color: #45a049; /* Darker green on hover */
+      background-color: #45a049;
   }
 
   .modal-content button[type="button"] {
-      background-color: #f44336; /* Red background for cancel */
-      color: white; /* White text */
+      background-color: #f44336; 
+      color: white; 
       width: 50%;
   }
 
   .modal-content button[type="button"]:hover {
-      background-color: #e53935; /* Darker red on hover */
+      background-color: #e53935;
   }
   .button-container {
-    display: flex; /* Use flexbox for button container */
-    width: 100%; /* Full width for container */
-    justify-content: space-between; /* Space between buttons */
-    margin-top: 20px; /* Space above the button container */
+    display: flex; 
+    width: 100%; 
+    justify-content: space-between;
+    margin-top: 20px;
     gap: 30px;
     margin-left: 20px;
 }
+

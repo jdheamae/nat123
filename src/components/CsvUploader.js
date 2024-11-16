@@ -26,26 +26,20 @@ function CsvUploader() {
 
       rows.forEach((row, index) => {
         const columns = row.split(',');
-        if (columns.length >= 10 && index > 0) { // Ensure the row has enough columns
+        if (columns.length >= 4 && index > 0) { // Ensure the row has enough columns
           data.push({
-            respondent: columns[0].trim(),
-            age: Number(columns[1].trim()),
-            sex: columns[2].trim(),
-            ethic: columns[3].trim(),
-            academic_perfromance: Number(columns[4].trim()),
-            adamemic_description: columns[5].trim(),
-            iq: columns[6].trim(),
-            type_school: columns[7].trim(),
-            socio_economic_status: columns[8].trim(),
-            study_habit: columns[9].trim(),
-            nat_result: Number(columns[10].trim()), // Add any additional columns if needed
+            loc: columns[0].trim(),
+            cases: Number(columns[1].trim()),
+            deaths: Number(columns[2].trim()),
+            date: columns[3].trim(),
+            Region: columns[4].trim()
           });
         }
       });
 
       try {
         const batch = data.map(async (item) => {
-          await addDoc(collection(db, 'natData'), item);
+          await addDoc(collection(db, 'dengueData'), item);
         });
 
         await Promise.all(batch);

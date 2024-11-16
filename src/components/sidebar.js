@@ -6,14 +6,14 @@ import './sidebar.css'; // Custom CSS for sidebar styling
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <img src="1.png" alt="Profile" className="sidebar-logo"/>
+      <img src="2.png" alt="Profile" className="sidebar-logo"/>
       <ul>
         <li>
-          <Link to="/data-list">Data List</Link>
+          <Link to="/dengueDataList">Dengue Data List</Link>
           
         </li>
         <li>
-          <Link to="/add-data">Add Data</Link>
+          <Link to="/add-data">Add Dengue Data</Link>
         </li>
         <li>
           <Link to="/dataVisualization">Data Visualization</Link>

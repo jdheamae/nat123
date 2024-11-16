@@ -25,16 +25,13 @@
   padding: 12px;
   border: none;
   border-radius: 8px;
-  background-color: #007bff;
+  background-color: #c82333;
   color: white;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.csv-uploader button:hover {
-  background-color: #0056b3;
-}
 
 .csv-uploader button:disabled {
   background-color: #6c757d;

@@ -2,26 +2,25 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from './firebase';
-import Visual from './visual'; // Existing visual component
-import ScatterPlot from './scatterPlot'; // Import the ScatterPlot component
-import StackedBarChart from './stackBar';
+import './dataVisualization.css';
+import Map from './map'
 
 
 
 const DataVisualization = () => {
-  const [natData, setNatData] = useState([]);
+  const [dengueData, setdengueData] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const fetchData = useCallback(async () => {
     setLoading(true);
     try {
-      const natCollection = collection(db, "natData");
+      const natCollection = collection(db, "dengueData");
       const natSnapshot = await getDocs(natCollection);
       const dataList = natSnapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
       }));
-      setNatData(dataList);
+      setdengueData(dataList);
     } catch (error) {
       console.error("Error fetching documents: ", error);
     } finally {
@@ -39,9 +38,7 @@ const DataVisualization = () => {
         <p>Loading data...</p>
       ) : (
         <>
-          <Visual natData={natData} />
-          <ScatterPlot natData={natData} /> 
-          <StackedBarChart natData={natData} />
+          <Map dengueData={dengueData} />
           
         </>
       )}
