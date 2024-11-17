@@ -1,14 +1,14 @@
 
 .sidebar {
     width: 230px; 
-    background-color: #ffffff; 
-    color: white;
-    padding: 20px; 
+    background-color: #ffffff;
+    color: white; 
+    padding: 20px;
     position: fixed; 
     top: 0; 
-    bottom: 0;
+    bottom: 0; 
 
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
 .sidebar-logo {
     width: 200px; 
@@ -20,42 +20,42 @@
   } 
 .sidebar h2 {
     font-size: 20px; 
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
     margin-left: 20px; 
     text-align: center; 
 }
 
 .sidebar ul {
-    list-style: none; 
-    padding: 0; 
-    margin-top: 100px; 
-    display: flex; 
-    flex-direction: column;
-    align-items: center; 
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin-top: 100px; /* Space above the list */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
     
 }
 
 .sidebar ul li {
-    margin-bottom: 10px; 
-    width: 100%;
-    text-align: center;
-    border: 1px solid #f2645a;
+    margin-bottom: 10px; /* Space between list items */
+    width: 100%; /* Make li take full width for centering */
+    text-align: center; /* Center the text within li */
+    border: 1px solid #0019fb;
     background-color: #ffffff;
     border-radius: 15px;
 }
 
 .sidebar ul li a {
-    text-decoration: none; 
-    color: rgb(0, 0, 0); 
-    font-size: 16px; 
-    display: block; 
-    padding: 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s; 
+    text-decoration: none; /* Remove underline from links */
+    color: rgb(0, 0, 0); /* Change link color to white for better visibility */
+    font-size: 16px; /* Font size for links */
+    display: block; /* Make the entire area clickable */
+    padding: 10px; /* Padding around the links for better click area */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
 }
 
 .sidebar ul li a:hover {
-    background-color: #f2645a ; 
-    color: #fff8f8; 
+    background-color: #0056b3 ; /* Light hover effect */
+    color: #000000; /* Change hover text color */
     border-radius: 14px;
 }

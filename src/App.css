@@ -12,8 +12,8 @@
   flex-direction: column;
 }
 
-.header {
-  background-color: #f2645a;
+.header { 
+  background-color: #0056b3;
   color: white;
   display: flex;
   align-items: center;
@@ -28,11 +28,11 @@ h1
 .main-content {
   flex: 1; 
   padding: 20px;
-  width: 100%; 
-  max-width: 500px; 
-  overflow-y: auto; 
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
+  width: 100%;
+  max-width: 500px; /* Same max-width as container for consistency */
+  overflow-y: auto; /* Allow scrolling if content is tall */
+  display: flex; /* Allow flexbox properties */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
   margin-top: 50px
 }

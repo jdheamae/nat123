@@ -1,19 +1,19 @@
 // Sidebar.js
 import React from "react";
 import { Link } from "react-router-dom";
-import './sidebar.css'; // Custom CSS for sidebar styling
+import './sidebar.css'; 
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <img src="2.png" alt="Profile" className="sidebar-logo"/>
+      <img src="1.png" alt="Profile" className="sidebar-logo"/>
       <ul>
         <li>
-          <Link to="/dengueDataList">Dengue Data List</Link>
+          <Link to="/data-list">Data List</Link>
           
         </li>
         <li>
-          <Link to="/add-data">Add Dengue Data</Link>
+          <Link to="/add-data">Add Data</Link>
         </li>
         <li>
           <Link to="/dataVisualization">Data Visualization</Link>
